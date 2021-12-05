@@ -3,16 +3,16 @@ import * as Styled from '../../styled';
 
 const HomeSection: FC = () => {
   return (
-    <Styled.HomeSection>
+    <Styled.Section alignCenter>
       <Styled.Header>
         <Styled.HeaderSpan underline>Aleš Zorc</Styled.HeaderSpan>
         <br />
-        <Styled.HeaderSpan strikethrough>BUSINESS </Styled.HeaderSpan>
-        <Styled.HeaderSpan>FRONT-END</Styled.HeaderSpan>
+        <Styled.HeaderSpan>Hobby</Styled.HeaderSpan>
         <br />
-        <Styled.HeaderSpan>DEVELOPER</Styled.HeaderSpan>
+        <Styled.HeaderSpan>Develope</Styled.HeaderSpan>
+        <Styled.HeaderSpan rotated>r</Styled.HeaderSpan>
       </Styled.Header>
-    </Styled.HomeSection>
+    </Styled.Section>
   );
 };
 

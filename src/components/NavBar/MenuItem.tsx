@@ -7,14 +7,14 @@ interface Props {
   href: string;
 }
 
-const NavBarItem: FC<Props> = ({ title, href }) => {
+const MenuItem: FC<Props> = ({ title, href }) => {
   return (
-    <Styled.NavBarItem>
+    <Styled.MenuItem>
       <Link to={`/${href}`} style={{ textDecoration: 'none' }}>
         <Styled.LinkWrapper>{title}</Styled.LinkWrapper>
       </Link>
-    </Styled.NavBarItem>
+    </Styled.MenuItem>
   );
 };
 
-export default NavBarItem;
+export default MenuItem;
