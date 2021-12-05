@@ -19,7 +19,7 @@ const AboutSection: FC = () => {
           </Styled.Text>
         </Styled.SectionContentColumn>
         <Styled.PortraitImageWrapper>
-          <img src="/images/portrait.png" alt="Aleš" />
+          <img src="https://i.ibb.co/0c9y1DN/portrait.png" alt="Aleš" />
         </Styled.PortraitImageWrapper>
       </Styled.SectionContent>
     </Styled.Section>

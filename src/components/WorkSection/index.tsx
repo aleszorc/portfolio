@@ -19,7 +19,10 @@ const WorkSection: FC = () => {
             <i className="devicon-nextjs-plain"></i>{' '}
             <i className="devicon-materialui-plain"></i>
           </Styled.Text>
-          <Styled.WorkImage src="/images/cronus.png" alt="cronus" />
+          <Styled.WorkImage
+            src="https://i.ibb.co/Zz3kCr5/cronus.png"
+            alt="cronus"
+          />
         </Styled.SectionContentColumn>
         <Styled.SectionContentColumn>
           <Styled.SubsectionHeader>Pregl Digital</Styled.SubsectionHeader>
@@ -33,7 +36,10 @@ const WorkSection: FC = () => {
             <i className="devicon-graphql-plain"></i>{' '}
           </Styled.Text>
           <Styled.WorkImageWrapper>
-            <Styled.WorkImage src="/images/pregldigital.png" alt="cronus" />
+            <Styled.WorkImage
+              src="https://i.ibb.co/X2RF9nb/pregldigital.png"
+              alt="pregldigital"
+            />
           </Styled.WorkImageWrapper>
         </Styled.SectionContentColumn>
       </Styled.SectionContent>
