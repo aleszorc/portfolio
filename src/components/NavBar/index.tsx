@@ -2,7 +2,7 @@ import React, { FC, useState } from 'react';
 import * as Styled from '../../styled';
 import NavBarItem from './NavBarItem';
 import MenuItem from './MenuItem';
-import { HiMenu, HiX } from 'react-icons/hi';
+import MenuButton from './MenuButton';
 
 interface NavBarItemElements {
   id: number;
@@ -41,9 +41,7 @@ const NavBar: FC = () => {
       {navBarItems.map(({ id, title, href }) => (
         <NavBarItem key={id} title={title} href={href} />
       ))}
-      <Styled.MenuButton onClick={() => setIsOpen(!isOpen)}>
-        {!isOpen ? <HiMenu size={'3rem'} /> : <HiX size={'3rem'} />}
-      </Styled.MenuButton>
+      <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
       {isOpen && (
         <Styled.Menu onClick={() => setIsOpen(false)}>
           {navBarItems.map(({ id, title, href }) => (

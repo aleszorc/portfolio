@@ -2,12 +2,12 @@ import React, { FC } from 'react';
 import * as Styled from '../../styled';
 import { HashLink as Link } from 'react-router-hash-link';
 
-interface Props {
+interface MenuItemProps {
   title: string;
   href: string;
 }
 
-const MenuItem: FC<Props> = ({ title, href }) => {
+const MenuItem: FC<MenuItemProps> = ({ title, href }) => {
   return (
     <Styled.MenuItem>
       <Link to={`/${href}`} style={{ textDecoration: 'none' }}>

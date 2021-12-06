@@ -176,15 +176,27 @@ export const NavBarItem = styled.div`
   }
 `;
 
-export const MenuButton = styled.div`
+export const MobileMenuButton = styled.div`
+  height: 2rem;
+  width: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 0;
   padding-top: 1.5rem;
-  &:hover {
-    opacity: 0.8;
-  }
 
   @media (min-width: 768px) {
     display: none;
   }
+`;
+
+export const Bar = styled.div`
+  width: 2rem;
+  height: 0.25rem;
+  background-color: ${theme.color.whitish};
+  transition: all 0.3s linear;
+  transform-origin: -3px;
+  position: relative;
 `;
 
 export const Menu = styled.div`
