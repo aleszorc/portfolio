@@ -206,14 +206,13 @@ export const Bar = styled.div`
 export const Menu = styled.div<MenuProps>`
   position: absolute;
   text-align: center;
-  z-index: 100;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.9);
-  height: 100%;
+  height: 500px;
   width: 100%;
   top: 5rem;
   transition: all 0.3s linear;
-  transform: ${(props) =>
-    !props.opened ? 'translateX(500px)' : 'translateX(0)'};
+  left: ${(props) => (!props.opened ? '-100%' : '0')};
 
   @media (min-width: 768px) {
     display: none;
