@@ -21,6 +21,10 @@ interface TextProps {
   upper?: boolean;
 }
 
+interface MenuProps {
+  opened?: boolean;
+}
+
 export const GlobalStyle = createGlobalStyle`
 
   html {
@@ -199,7 +203,7 @@ export const Bar = styled.div`
   position: relative;
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.div<MenuProps>`
   position: absolute;
   text-align: center;
   z-index: 100;
@@ -207,6 +211,9 @@ export const Menu = styled.div`
   height: 100%;
   width: 100%;
   top: 5rem;
+  transition: all 0.3s linear;
+  transform: ${(props) =>
+    !props.opened ? 'translateX(500px)' : 'translateX(0)'};
 
   @media (min-width: 768px) {
     display: none;

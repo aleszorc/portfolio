@@ -42,13 +42,14 @@ const NavBar: FC = () => {
         <NavBarItem key={id} title={title} href={href} />
       ))}
       <MenuButton isOpen={isOpen} setIsOpen={setIsOpen} />
-      {isOpen && (
-        <Styled.Menu onClick={() => setIsOpen(false)}>
-          {navBarItems.map(({ id, title, href }) => (
-            <MenuItem key={id} title={title} href={href} />
-          ))}
-        </Styled.Menu>
-      )}
+      <Styled.Menu
+        opened={isOpen ? true : false}
+        onClick={() => setIsOpen(false)}
+      >
+        {navBarItems.map(({ id, title, href }) => (
+          <MenuItem key={id} title={title} href={href} />
+        ))}
+      </Styled.Menu>
     </Styled.NavBar>
   );
 };
