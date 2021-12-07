@@ -7,7 +7,7 @@ const HomeSection: FC = () => {
       <Styled.Header>
         <Styled.HeaderSpan underline>Aleš Zorc</Styled.HeaderSpan>
         <br />
-        <Styled.HeaderSpan>Hobby</Styled.HeaderSpan>
+        <Styled.HeaderSpan>Front-end</Styled.HeaderSpan>
         <br />
         <Styled.HeaderSpan>Develope</Styled.HeaderSpan>
         <Styled.HeaderSpan rotated>r</Styled.HeaderSpan>

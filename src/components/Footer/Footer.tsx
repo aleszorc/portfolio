@@ -5,7 +5,7 @@ const Footer: FC = () => {
   return (
     <Styled.Footer>
       <Styled.Text size={1} upper>
-        Designed by Aleš Zorc, 2021.
+        Designed by Aleš Zorc. {new Date().getFullYear()}.
       </Styled.Text>
     </Styled.Footer>
   );
