@@ -285,5 +285,13 @@ export const ContactBox = styled.div`
 
 export const Footer = styled.div`
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;
+
+export const ScrollToTop = styled.div`
+  &:hover {
+    color: ${theme.color.main};
+    cursor: pointer;
+  }
 `;
